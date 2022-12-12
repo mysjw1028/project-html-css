@@ -12,14 +12,15 @@ import lombok.RequiredArgsConstructor;
 import site.metacoding.miniproject1.service.SubscribesService;
 import site.metacoding.miniproject1.web.dto.response.subscribes.SubscribesRespListDto;
 
+
 @RequiredArgsConstructor
 @Controller
 public class SubscribesController {
-	private final SubscribesService subsribesService;
+	private final SubscribesService subscribesService;
 
 	@GetMapping("/subscribes/{id}")
 	public String subscribesform(@PathVariable Integer id, Model model) {
-		List<SubscribesRespListDto> subcribesList = subsribesService.구독목록(id);
+		List<SubscribesRespListDto> subcribesList = subscribesService.구독목록(id);
 		model.addAttribute("subcribesList", subcribesList);
 		return "subscribes/subscribes";
 	}
