@@ -50,5 +50,8 @@ public class CompanysController {
 		return new CMRespDto<>(1, "회사정보등록성공", null);
 	}
 
-
+	@GetMapping("/companysdelete/{id}")
+	public String companyDeleteform() {
+		return "companysdelete/companysdelete";
+	}
 }
