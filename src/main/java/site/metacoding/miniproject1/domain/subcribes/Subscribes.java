@@ -1,4 +1,4 @@
-package site.metacoding.miniproject1.domain.matchings;
+package site.metacoding.miniproject1.domain.subcribes;
 
 import java.sql.Timestamp;
 
@@ -9,9 +9,9 @@ import lombok.Setter;
 @NoArgsConstructor
 @Setter
 @Getter
-public class Matchings {
+public class Subscribes {
 	private Integer id;
-	private Integer resumeId;
-	private Integer wantedId;
+	private Integer userId;
+	private Integer companyId;
 	private Timestamp created;
 }

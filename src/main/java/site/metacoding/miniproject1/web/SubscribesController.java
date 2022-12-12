@@ -9,14 +9,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 
 import lombok.RequiredArgsConstructor;
-import site.metacoding.miniproject1.service.SubsribesService;
+import site.metacoding.miniproject1.service.SubscribesService;
 import site.metacoding.miniproject1.web.dto.response.subscribes.SubscribesRespListDto;
-
 
 @RequiredArgsConstructor
 @Controller
 public class SubscribesController {
-	private final SubsribesService subsribesService;
+	private final SubscribesService subsribesService;
 
 	@GetMapping("/subscribes/{id}")
 	public String subscribesform(@PathVariable Integer id, Model model) {
