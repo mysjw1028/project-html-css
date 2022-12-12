@@ -1,138 +1,115 @@
-@font-face {
-	font-family: 'RixInooAriDuriR';
-	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/RixInooAriDuriR.woff2') format('woff2');
-	font-weight: normal;
-	font-style: normal;
-}
+@charset "UTF-8";
 
-.company_header {
-	display: block;
-	background: #0d0d12;
-	border-bottom: 1px solid #bbb;
-	height: 50px;
-
-}
-
-.company_header_inner {
-	width: 1000px;
-	height: 100%;
-	display: -webkit-flex;
+.container {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-	margin: 0 auto;
-}
-
-s .company_header_inner .company_menu {
-	text-align: center;
-	flex: 0 1 50px;
-	color: #bbb;
+	flex-direction: column;
+	height: auto;
+	font-family: GmarketSansMedium;
+	color: #191819;
 
 }
 
-.company_header_inner .company_menu a {
-	margin-left: 45px;
-	color: #bbb;
+
+.companyedit_title {
+	/*기업정보 설정*/
+	justify-content: left;
+	align-items: flex-start;
+	font-size: 20px;
+	font-weight: bold;
+	width: 950px;
+	margin: 50px 0 30px 0;
+
+}
+
+.basic_information_option {
+	/*기업정보/서비스*/
+	justify-content: left;
+	align-items: flex-start;
+	font-size: 16px;
+	width: 950px;
+	height: 24px;
+	line-height: 24px;
+	margin: 0 0 10px 50px;
+
+}
+
+
+.basic_information_option .basic_information {
+	/*기업설정 수정*/
 	width: 150px;
+	height: 24px;
+	font-size: 16px;
+	margin-bottom: 10px;
 }
 
-/*버튼*/
 
+.basic_information_option .service_release {
+	/*기업 서비스 해제*/
+	width: 150px;
+	height: 24px;
+	font-size: 16px;
+	margin-bottom: 10px;
 
-.dropdown {
-	position: relative;
-	display: inline-block;
-	margin-right: -650px;
 }
 
-.dropbtn {
-	background-color: #0d0d12;
-	background: none;
-	color: #bbb;
-	padding: 16px;
+/*상황보고 수정할것*/
+.basic_information_option a:hover {
+	font-size: 16px;
+	box-shadow: inset 0 -10px 1px #33ffcc;
+}
+
+/*기업서비스 해제*/
+.service_cancellation_text_box {
+	border: 1px solid #bbb;
+	border-radius: 5px;
+	margin: -35px 280px 100px auto;
+	width: 698px;
+	height: 528px;
+	box-sizing: content-box;
+}
+
+
+
+
+.service_cancellation_text_box .service_cancellation {
+	margin: 32px 0 20px 30px;
+	font-size: 18px;
+	width: 300px;
+	height: 27px;
+	line-height: 27px;
+
+}
+
+
+
+.service_cancellation_text_box .service_cancellation_information {
+	text-align: left;
 	font-size: 14px;
-	border: none;
-
-}
-
-.dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: #f1f1f1;
-	min-width: 96px;
-	min-height: 40px;
-	font-size: 14px;
-	border-radius: 15px;
-	box-shadow: 0px 8px 16px 0px #bbb;
-	z-index: 1;
-}
-
-.dropdown-content a {
-	color: #0d0d12;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
-}
-
-.dropdown-content a:hover {
-	background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-	display: block;
-}
-
-.dropdown:hover .dropbtn {
-	background: none;
 	color: #bbb;
-
+	margin: 30px 0 0 15px;
+	margin-left: 73px;
 }
 
 
-.dropdown-content a {
-	color: #bbb;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
+.completion {
+	text-align: center;
+	width: 150px;
+	height: 40px;
+	font-size: 16px;
+	line-height: 40px;
+	border-radius: 25px;
+	margin: 50px auto;
+	background-color: #33ffcc;
 }
 
-
-/*버튼 끝*/
-
-
-.company_header_inner .company_login a {
-	display: block;
-	color: #888888;
-	overflow: hidden;
-	width: 60px;
+.completion a {
+	color: #191819;
 
 }
 
-.company_header_inner .company_login a:hover {
-	display: block;
-	color: #0d0d12;
-
-}
-
-.company_header_inner .company_service {
-	margin-top: 14px;
-	width: 133px;
-	height: 34px;
-	padding-left: -70px;
-	margin-right: -20px;
-}
-
-.company_header_inner .company_service a {
-	padding: 8px 30px;
-	border-radius: 30px;
-	border: 2px solid #f4f4f4;
-	background-color: #0d0d12;
-	color: #f4f4f4;
-	line-height: 20px;
-}
-
-.company_header_inner .company_service a:hover {
-	border: 2px solid #f4f4f4;
-	background-color: #0d0d12;
-	color: #f4f4f4;
+.completion a:hover {
+	font-size: 16px;
+	color: #191819;
 }
