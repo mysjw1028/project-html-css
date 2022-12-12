@@ -4,16 +4,14 @@
 <!DOCTYPE html>
 <html lang="ko">
 
-<!DOCTYPE html>
-<html lang="ko">
+
 
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="./static/css/companyedit.css" rel="stylesheet" type="text/css" />
-	<link href="./static/css/reset.css" rel="stylesheet" type="text/css" />
-	<link href="./static/css/header.css" rel="stylesheet" type="text/css" />
+	<link href="/css/companysedit.css" rel="stylesheet">
+	<link href="/css/reset.css" rel="stylesheet">
 </head>
 
 <body>
@@ -87,3 +85,4 @@
 </body>
 
 </html>
+<%@ include file="../layout/footer.jsp"%>

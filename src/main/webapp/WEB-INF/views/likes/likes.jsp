@@ -6,12 +6,14 @@
 <html lang="ko">
 
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="/css/likes.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/likes.css" rel="stylesheet">
+	<link href="/css/reset.css" rel="stylesheet">
 
 </head>
+
 <body>
 	<input id="id" type="hidden" value="{likesListstate.id}">
 
@@ -40,7 +42,8 @@
 							<div class="company_image">
 								<div class="test">
 									<a href="/"><img class="conpany_min_iphoto" src='https://picsum.photos/250/250'
-										alt="회사이미지" width="25" height="25">${likes.photo}</a> <a class="test2">${likes.companyName}</a>
+											alt="회사이미지" width="25" height="25">${likes.photo}</a> <a
+										class="test2">${likes.companyName}</a>
 								</div>
 							</div>
 							<div class="${likes.state=='마감' ? 'like_deadline': 'like_proceeding'}">${likes.state}</div>
