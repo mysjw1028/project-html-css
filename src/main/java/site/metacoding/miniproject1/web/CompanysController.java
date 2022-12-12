@@ -54,4 +54,9 @@ public class CompanysController {
 	public String companyDeleteform() {
 		return "companysdelete/companysdelete";
 	}
+
+	@GetMapping("/companysedit/{id}")
+	public String companyEditform() {
+		return "companysedit/companysedit";
+	}
 }
